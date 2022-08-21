@@ -15,7 +15,10 @@ do
   gh pr create -f
   gh pr merge --merge --delete-branch
 
-  sleep 40
+  
+  bash bin/pair-extraordinaire
 done
 
 bash bin/teardown
+#run itself again
+
